@@ -1,0 +1,39 @@
+/* Estilo do cartaz */
+.movie-card {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden; 
+  transition: all 0.3s ease;
+  cursor: pointer;
+  
+}
+
+.movie-poster {
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+  display: block;
+  transition: transform 0.5s ease;
+  
+}
+
+
+.movie-pre {
+  width: 100%;
+  height: auto;
+  object-fit: cover; 
+  display: block;
+  transition: transform 0.5s ease;
+  
+}
+
+.movie-card:hover .movie-poster{
+  transform: scale(1.05);
+
+}
+
+.movie-card:hover .movie-pre{
+  transform: scale(1.05);
+
+}

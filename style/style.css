@@ -1,0 +1,19 @@
+/* ========================================
+   CSS PRINCIPAL - Cine Cultura
+   Importa todos os módulos
+   ======================================== */
+
+/* Cores e variáveis */
+@import url('colors.css');
+
+/* Tipografia */
+@import url('typography.css');
+
+/* Utilitários */
+@import url('geral.css');
+
+/* Responsividade */
+@import url('responsive.css');
+
+
+@import url('animations.css');

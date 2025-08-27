@@ -7,25 +7,23 @@
 
   <title>Cinema - FCP</title>
 
-  <!-- Importação  boostrap  -->
+  <link rel="stylesheet" type="text/css" href="/style/style.css" media="screen" />
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
 
-  <!-- Importação  Swiper Slider  -->
   <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- Importação  AOS js (animação js) -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
 
 <body>
 
-  <!-- Header -->
   <header>
     <nav class="navbar navbar-expand-lg bg-black border-bottom border-danger">
       <div class="container">
@@ -37,10 +35,7 @@
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
             <li class="nav-item  ">
-              <a class="nav-link active text-white link-danger" aria-current="page" href="/pages/2emcartaz/index.html">Em Cartaz</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white link-danger" href="/pages/2emcartaz/index.html#lancamentos">Lançamentos</a>
+              <a class="nav-link active text-white link-danger" aria-current="page" href="/pages/2emcartaz/index.html">Filmes</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white link-danger" href="/pages/4escolha_filme_assento/index.html">Sessões</a>
@@ -57,16 +52,14 @@
     </nav>
   </header>
 
-  <!-- Banner Principal -->
   <main>
-    <section class="py-5 bghome ">
-      <div class="text-center">
-        <img src="assets/images/banner.png" alt="Cine Cultura" class="img-fluid rounded">
+    <section class="bghome ">
+      <div class="container text-white pb-5 ">
+              <div class="text-center">
+        <img src="assets/images/banner.png" alt="Cine Cultura" class=" py-5 img-fluid rounded">
       </div>
-      <!-- Em Cartaz -->
-      <div class="pt-5 container text-white">
         <h4 class=" pb-1">Em Cartaz</h4>
-        <div class="swiper mySwiper">
+        <div class="swiper mySwiper ">
           <div class="swiper-wrapper">
             <div class="swiper-slide text-center">
               <img src="assets/images/img1.png" alt="Os Caras Malvados 2" class="img-fluid  ">
@@ -85,14 +78,14 @@
               <h5 class="mb-0">O Rei Da Feira</h5>
             </div>
           </div>
-          <!-- Controles do Swiper -->
+
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
         </div>
       </div>
     </section>
 
-    <!-- Próximos Lançamentos -->
+
     <section class="py-5 bg-light">
       <div class="container">
         <h4 class="mb-4">Próximos lançamentos</h4>
@@ -100,21 +93,21 @@
           <div class="col-md-4">
             <div class="text-center">
               <img src="assets/images/img4.png" alt="Demon Slayer" class="img-fluid ">
-              <div><span class="badge bg-danger px-3 py-1 m-1 ">22/09</span></div>
+              <div><span class="badge bgred px-3 py-1 m-1 ">22/09</span></div>
               <h5 class=""> Demon Slayer: Mugen Train - O Filme</h5>
             </div>
           </div>
           <div class="col-md-4">
             <div class="text-center">
               <img src="assets/images/img5.png" alt="Anônimo 2" class="img-fluid ">
-              <div><span class="badge bg-danger px-3 py-1 m-1 ">28/09</span></div>
+              <div><span class="badge bgred px-3 py-1 m-1 ">28/09</span></div>
               <h5>Anônimo 2</h5>
             </div>
           </div>
           <div class="col-md-4">
             <div class="text-center">
               <img src="assets/images/img6.png" alt="O Último Azul" class="img-fluid ">
-              <div><span class="badge bg-danger px-3 py-1 m-1 ">28/09</span></div>
+              <div><span class="badge bgred px-3 py-1 m-1 ">28/09</span></div>
               <h5 class="">O Último Azul</h5>
             </div>
           </div>
@@ -123,9 +116,8 @@
       </div>
     </section>
 
-    <!-- banners -->
-    <section class="py-5 bg-danger text-white">
-      <div class="container">
+    <section class="py-5 text-white bganf">
+      <div class="container ">
         <div class="row align-items-center">
           <h4>🍿 Venha se divertir!</h4>
           <p>A diversão está garantida para toda a família.</p>
@@ -139,7 +131,7 @@
       </div>
     </section>
   </main>
-  <!-- Footer -->
+
   <footer class="bg-black text-white py-5">
     <div class="container">
       <div class="row">
@@ -167,9 +159,6 @@
 
 
   <script>
-    // Importação
-
-
     const swiper = new Swiper('.mySwiper', {
       loop: true,
       navigation: {
@@ -179,24 +168,25 @@
       slidesPerView: 3,
       spaceBetween: 20,
       breakpoints: {
-        768: {
+         1200: {
           slidesPerView: 3,
           spaceBetween: 15,
         },
-        576: {
-          slidesPerView: 1,
-          spaceBetween: 10,
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 13,
+        },
+        320: {
+          slidesPerView: 1.5,
+          spaceBetween: 12,
         }
       }
     });
   </script>
 
-
-  <!-- CSS -->
-
   <style>
     .bghome {
-      background-image: url("assets/images/bg1.1.png");
+      background-image: url("assets/background/bg112.webp");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -204,13 +194,16 @@
       width: 100%;
     }
 
-    .logosize {
-      height: 10vh !important;
+    .bganf {
+      background-image: url("assets/background/bg222V.webp");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      width: 100%;
     }
 
-    .nav-link{
-      font-weight: bold;
-    }
+
 
   </style>
 

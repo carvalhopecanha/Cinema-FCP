@@ -1,190 +1,323 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cine Cultura</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<html lang="pt-br">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cinema - FCP</title>
+
+  <link rel="stylesheet" type="text/css" href="../../style/style.css" media="screen" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </head>
+
 <body>
 
-  <!-- Filmes em Cartaz -->
-  <section class="py-5 bg-dark">
-    <div class="container">
-      <h2 class="text-center mb-4" >Filmes em cartaz</h2>
-      <p class="text-center text-light mb-4" >Veja os filmes em exibição</p>
-      <hr class="border-light">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-black border-bottom border-danger">
+      <div class="container">
+        <a class="navbar-brand p-" href="/"> <img src="../../assets/Logo/logoB.png" alt="Logo"
+            class="img-fluid logosize">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item  ">
+              <a class="nav-link active text-white link-danger" aria-current="page"
+                href="/pages/2emcartaz/index.html">Filmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white link-danger" href="/pages/4escolha_filme_assento/index.html">Sessões</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white link-danger" href="/pages/meus_dados/index.html">Minha conta</a>
+            </li>
+          </ul>
 
-      <!-- Tabs -->
-      <div class="d-flex justify-content-center mb-4 py-3" >
-        <div class="container text-center">
-        <button class="btn btn-danger me-2 active">Em cartaz</button>
-        <button class="btn btn-outline-light me-2">Pré-Estreia</button>
-        <button class="btn btn-outline-light" onclick="window.location.href='#lancamentos'">Lançamentos</button>
-    </div>  
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Cabeçalho  -->
+
+  <body>
+    <main class="bg-cine-dark ">
+      <section class="py-5">
+        <div class="container">
+          <h2 class="text-center text-white">Programação</h2>
+          <p class="text-center text-light ">Veja os filmes em cartaz e os que chegam em breve ao Cine Cultura</p>
+
+         
+    <div class="d-flex justify-content-center mb-4">
+      <ul class="nav nav-pills justify-content-center" id="filmesTab" role="tablist">
+        <li class="nav-item m-2" role="presentation">
+          <button class="nav-link active text-white" id="em-cartaz-tab" data-bs-toggle="tab" data-bs-target="#em-cartaz" type="button" role="tab" aria-controls="em-cartaz" aria-selected="true">
+            Em cartaz
+          </button>
+        </li>
+        <li class="nav-item m-2" role="presentation">
+          <button class="nav-link text-white" id="pre-estreia-tab" data-bs-toggle="tab" data-bs-target="#pre-estreia" type="button" role="tab" aria-controls="pre-estreia" aria-selected="false">
+            Pré-Estreia
+          </button>
+        </li>
+        <li class="nav-item m-2" role="presentation">
+          <button class="nav-link text-white" id="em-breve-tab" data-bs-toggle="tab" data-bs-target="#em-breve" type="button" role="tab" aria-controls="em-breve" aria-selected="false">
+            Em breve
+          </button>
+        </li>
+      </ul>
     </div>
 
-      <!-- Filmes -->
-      <div class="row g-4 py-3">
-        <div class="col-md-3">
-          <div class="text-center">
-            <img src="../../assets/images/img1.png" alt="Os Caras Malvados 2" class="img-fluid">
-            <h5 class="mt-2">Os Caras Malvados 2</h5>
-            <p class="mb-0"><span class="badge bg-success m-1">L</span>01h e 43min</p>
+    <!-- Conteúdo das abas (único tab-content) -->
+    <div class="tab-content" id="filmesTabContent">
+
+      <!-- Aba: Em Cartaz -->
+      <div class="tab-pane fade show active" id="em-cartaz" role="tabpanel" aria-labelledby="em-cartaz-tab">
+        <div class="row g-4 py-4">
+          <div class="col-md-3">
+            <a href="../3filme/index.html" class="text-decoration-none text-white movie-link">
+              <div class="movie-card">
+                <img src="../../assets/images/img1.png" alt="Os Caras Malvados 2" class="img-fluid movie-poster">
+                <h5 class="mt-2 text-white">Os Caras Malvados 2</h5>
+                <div class="d-flex align-items-center gap-2">
+                  <img src="../../assets/icons/L.svg" alt="Livre" class="classificacao-icon m-1">
+                  <p class="mb-0">01h e 43min</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="../3filme/index.html" class="text-decoration-none text-white movie-link">
+              <div class="movie-card">
+                <img src="../../assets/images/img2.png" alt="Superman" class="img-fluid movie-poster">
+                <h5 class="mt-2 text-white">Superman</h5>
+                <div class="d-flex align-items-center gap-2">
+                  <img src="../../assets/icons/10.svg" alt="Livre" class="classificacao-icon m-1">
+                  <p class="mb-0">01h e 43min</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="../3filme/index.html" class="text-decoration-none text-white movie-link">
+              <div class="movie-card">
+                <img src="../../assets/images/img3.png" alt="Juntos" class="img-fluid movie-poster">
+                <h5 class="mt-2 text-white">Juntos</h5>
+                <div class="d-flex align-items-center gap-2">
+                  <img src="../../assets/icons/14.svg" alt="Livre" class="classificacao-icon m-1">
+                  <p class="mb-0">01h e 43min</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="../3filme/index.html" class="text-decoration-none text-white movie-link">
+              <div class="movie-card">
+                <img src="../../assets/images/imag4.1.png" alt="O Rei da Feira" class="img-fluid movie-poster">
+                <h5 class="mt-2 text-white">O Rei da Feira</h5>
+                <div class="d-flex align-items-center gap-2">
+                  <img src="../../assets/icons/16.svg" alt="Livre" class="classificacao-icon m-1">
+                  <p class="mb-0">01h e 43min</p>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="text-center">
-            <img src="../../assets/images/img2.png" alt="Superman" class="img-fluid">
-            <h5 class="mt-2">Superman</h5>
-            <p class="mb-0"><span class="badge bg-success m-1">L</span>01h e 43min</p>
+
+        <div class="row g-4 py-4">
+          <div class="col-md-3">
+            <a href="../3filme/index.html" class="text-decoration-none text-white movie-link">
+              <div class="movie-card">
+                <img src="../../assets/images/img1.png" alt="Os Caras Malvados 2" class="img-fluid movie-poster">
+                <h5 class="mt-2 text-white">Os Caras Malvados 2</h5>
+                <div class="d-flex align-items-center gap-2">
+                  <img src="../../assets/icons/L.svg" alt="Livre" class="classificacao-icon m-1">
+                  <p class="mb-0">01h e 43min</p>
+                </div>
+              </div>
+            </a>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="text-center">
-            <img src="../../assets/images/img3.png" alt="juntos" class="img-fluid">
-            <h5 class="mt-2">Juntos</h5>
-            <p class="mb-0"><span class="badge bg-danger m-1">18</span>01h e 43min</p>
+          <div class="col-md-3">
+            <a href="../3filme/index.html" class="text-decoration-none text-white movie-link">
+              <div class="movie-card">
+                <img src="../../assets/images/img2.png" alt="Superman" class="img-fluid movie-poster">
+                <h5 class="mt-2 text-white">Superman</h5>
+                <div class="d-flex align-items-center gap-2">
+                  <img src="../../assets/icons/10.svg" alt="Livre" class="classificacao-icon m-1">
+                  <p class="mb-0">01h e 43min</p>
+                </div>
+              </div>
+            </a>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="text-center">
-            <img src="../../assets/images/imag4.1.png" alt="O Rei da feira" class="img-fluid">
-            <h5 class="mt-2">O Rei da feira</h5>
-            <p class="mb-0"><span class="badge bg-danger m-1">18</span>01h e 43min</p>
+          <div class="col-md-3">
+            <a href="../3filme/index.html" class="text-decoration-none text-white movie-link">
+              <div class="movie-card">
+                <img src="../../assets/images/img3.png" alt="Juntos" class="img-fluid movie-poster">
+                <h5 class="mt-2 text-white">Juntos</h5>
+                <div class="d-flex align-items-center gap-2">
+                  <img src="../../assets/icons/14.svg" alt="Livre" class="classificacao-icon m-1">
+                  <p class="mb-0">01h e 43min</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="../3filme/index.html" class="text-decoration-none text-white movie-link">
+              <div class="movie-card">
+                <img src="../../assets/images/imag4.1.png" alt="O Rei da Feira" class="img-fluid movie-poster">
+                <h5 class="mt-2 text-white">O Rei da Feira</h5>
+                <div class="d-flex align-items-center gap-2">
+                  <img src="../../assets/icons/16.svg" alt="Livre" class="classificacao-icon m-1">
+                  <p class="mb-0">01h e 43min</p>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
 
-      <div class="row g-4 py-3">
-        <div class="col-md-3">
-          <div class="text-center">
-            <img src="../../assets/images/img1.png" alt="Os Caras Malvados 2" class="img-fluid">
-            <h5 class="mt-2">Os Caras Malvados 2</h5>
-            <p class="mb-0"><span class="badge bg-success m-1">L</span>01h e 43min</p>
+      <!-- Aba: Pré-Estreia -->
+      <div class="tab-pane fade" id="pre-estreia" role="tabpanel" aria-labelledby="pre-estreia-tab">
+        <div class="row g-4 py-4">
+          <div class="col-md-3">
+            <div class="movie-card">
+              <img src="../../assets/images/img4.png" alt="Demon Slayer" class="img-fluid movie-pre">
+              <div><span class="badge bg-danger px-3 mt-3">28/09</span></div>
+              <h5 class="mt-2 text-white">Demon Slayer: Mugen Train</h5>
+            </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="text-center">
-            <img src="../../assets/images/img2.png" alt="Superman" class="img-fluid">
-            <h5 class="mt-2">Superman</h5>
-            <p class="mb-0"><span class="badge bg-success m-1">L</span>01h e 43min</p>
+          <div class="col-md-3">
+            <div class="movie-card">
+              <img src="../../assets/images/img5.png" alt="Anônimo 2" class="img-fluid movie-pre">
+              <div><span class="badge bg-danger px-3 mt-3">28/09</span></div>
+              <h5 class="mt-2 text-white">Anônimo 2</h5>
+            </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="text-center">
-            <img src="../../assets/images/img3.png" alt="juntos" class="img-fluid">
-            <h5 class="mt-2">Juntos</h5>
-            <p class="mb-0"><span class="badge bg-danger m-1">18</span>01h e 43min</p>
+          <div class="col-md-3">
+            <div class="movie-card">
+              <img src="../../assets/images/img6.png" alt="O Último Azul" class="img-fluid movie-pre">
+              <div><span class="badge bg-danger px-3 mt-3">28/09</span></div>
+              <h5 class="mt-2 text-white">O Último Azul</h5>
+            </div>
           </div>
-        </div>
-        <div class="col-md-3">
-          <div class="text-center">
-            <img src="../../assets/images/imag4.1.png" alt="O Rei da feira" class="img-fluid">
-            <h5 class="mt-2">O Rei da feira</h5>
-            <p class="mb-0"><span class="badge bg-danger m-1">18</span>01h e 43min</p>
+          <div class="col-md-3">
+            <div class="movie-card">
+              <img src="../../assets/images/img4.png" alt="Demon Slayer" class="img-fluid movie-pre">
+              <div><span class="badge bg-danger px-3 mt-3">28/09</span></div>
+              <h5 class="mt-2 text-white">Demon Slayer: Mugen Train</h5>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Próximos Lançamentos -->
-  <section id="lancamentos" class="py-5 bg-dark">
-    <div class="container">
-      <h2 class="text-center mb-4">Próximos lançamentos</h2>
-      <hr class="border-light">
-
-      <div class="row g-4 py-5">
-        <div class="col-md-4">
-          <div class="text-center">
-            <img src="../../assets/images/img4.png" alt=" " class="img-fluid">
-             <div><span class="badge bg-danger px-3 py-1 m-1 ">28/09</span></div>
-            <h5 class="mt-2">Demon Slayer: Mugen Train - O Filme</h5>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="text-center">
-            <img src="../../assets/images/img5.png" alt=" " class="img-fluid">
-             <div><span class="badge bg-danger px-3 py-1 m-1 ">28/09</span></div>
-            <h5 class="mt-2">Anônimo 2</h5>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="text-center">
-             <img src="../../assets/images/img6.png" alt=" " class="img-fluid">
-             <div><span class="badge bg-danger px-3 py-1 m-1 ">28/09</span></div>
-            <h5 class="mt-2">O Último Azul</h5>
+          <div class="col-md-3">
+            <div class="movie-card">
+              <img src="../../assets/images/img4.png" alt="Demon Slayer" class="img-fluid movie-pre">
+              <div><span class="badge bg-danger px-3 mt-3">28/09</span></div>
+              <h5 class="mt-2 text-white">Demon Slayer: Mugen Train</h5>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- Aba: Em Breve -->
+      <div class="tab-pane fade" id="em-breve" role="tabpanel" aria-labelledby="em-breve-tab">
+        <div class="row g-4 py-4">
+          <div class="col-md-3">
+            <div class="movie-card">
+              <img src="../../assets/images/img4.png" alt="Demon Slayer" class="img-fluid movie-pre">
+              <div><span class="badge bg-danger px-3 mt-3">05/10</span></div>
+              <h5 class="mt-2 text-white">Demon Slayer: Mugen Train</h5>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="movie-card">
+              <img src="../../assets/images/img5.png" alt="Anônimo 2" class="img-fluid movie-pre">
+              <div><span class="badge bg-danger px-3 mt-3">12/10</span></div>
+              <h5 class="mt-2 text-white">Anônimo 2</h5>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="movie-card">
+              <img src="../../assets/images/img6.png" alt="O Último Azul" class="img-fluid movie-pre">
+              <div><span class="badge bg-danger px-3 mt-3">19/10</span></div>
+              <h5 class="mt-2 text-white">O Último Azul</h5>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="movie-card">
+              <img src="../../assets/images/img4.png" alt="Demon Slayer" class="img-fluid movie-pre">
+              <div><span class="badge bg-danger px-3 mt-3">26/10</span></div>
+              <h5 class="mt-2 text-white">Demon Slayer: Mugen Train</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/script.js"></script>
-</body>
+  </div>
+</section>
 
 
-<style>/* Estilo personalizado */
-body {
-  background-color: #111;
-  color: #fff;
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+
+  <style>
+    .bg-cine-dark {
+      background-color: var(--bg-dark);
+      color: white;
+    }
+
+    /* .logo img {
+      max-height: 60px;
+    }*/
+
+    .classificacao-icon {
+      width: 25px;
+      height: 25px;
+      vertical-align: middle;
+    }
+
+    .badge {
+      font-size: 0.8rem;
+      padding: 0.3rem 0.6rem;
+    }
+
+    .footer {
+      background-color: #000;
+    }
+
+    .nav-pills .nav-link.active {
+      background-color: var(--color-red);
+      color: white;
+      font-weight: bold;
 }
 
-.logo img {
-  max-height: 60px;
-}
+    .nav-pills .nav-link:hover:not(.active) {
+      background-color: var(--color-red);
+      color: white;
+    }
+  </style>
 
-.swiper-slide img {
-  max-width: 100%;
-  height: auto;
-}
+  <script>
 
-.badge {
-  font-size: 0.8rem;
-  padding: 0.3rem 0.6rem;
-}
-
-.footer {
-  background-color: #000;
-}
-
-@media (max-width: 768px) {
-  .swiper-slide img {
-    max-height: 200px;
-  }
-}</style>
-
-<script>
-    // Inicializar Swiper
-const swiper = new Swiper('.mySwiper', {
-  loop: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  slidesPerView: 3,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-});
-
-// Inicializar AOS
-AOS.init({
-  duration: 800,
-  easing: 'ease-in-out',
-});
-</script>
+  </script>
 
 
 

@@ -1,0 +1,35 @@
+.bgred {
+    background-color: var(--color-red);
+}
+
+
+
+/* cabeçalho */
+.logosize {
+    height: 10vh !important;
+}
+
+.nav-link {
+    font-weight: bold;
+}
+
+
+
+/*  Slider swiper  */
+.swiper-button-prev,
+.swiper-button-next {
+    color: white !important;
+    /*background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%; */
+    width: 40px;
+    height: 40px;
+    /* Tamanho do círculo */
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    transform: scale(1.3);
+}
