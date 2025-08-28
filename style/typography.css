@@ -1,0 +1,9 @@
+.cinema-nav-menu{
+    font-size: 22px;
+    font-weight: bold;
+    gap: 50px; 
+}
+
+.cinema-nav-menu a:hover{
+    background-color: var(--color-red);
+}

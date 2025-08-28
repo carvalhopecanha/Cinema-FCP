@@ -1,12 +1,50 @@
+a:link {
+    text-decoration: none;
+}
+
+
+.bghome {
+    background-image: url("assets/background/bg112.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.bganf {
+    background-image: url("assets/background/bg222V.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.navbar-toggler-icon {
+    background-color: var(--color-red);
+    border-radius: 1px;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
 .bgred {
     background-color: var(--color-red);
+    border-radius: 0px !important;
+}
+
+.colorgray {
+    color: var(--color-dark);
+}
+
+.nav-pills .nav-link {
+    border-radius: 0px !important;
 }
 
 
 
 /* cabeçalho */
 .logosize {
-    height: 10vh !important;
+    height: 60px !important;
 }
 
 .nav-link {
@@ -33,3 +71,16 @@
 .swiper-button-next:hover {
     transform: scale(1.3);
 }
+
+/* icones classificação do filme */
+.classificacao-icon {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+
+ .bg-cine-dark {
+      background-color: var(--bg-dark);
+      color: white;
+    }

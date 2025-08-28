@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cinema - FCP</title>
+
+  <link rel="stylesheet" type="text/css" href="/style/style.css" media="screen" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-black border-bottom border-danger">
+      <div class="container">
+        <a class="navbar-brand p-" href="/"> <img src="../../assets/Logo/logoB.png" alt="Logo"
+            class="img-fluid logosize"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 cinema-nav-menu">
+            <li class="nav-item ">
+              <a class="nav-link active text-white " aria-current="page" href="/pages/filme/index.html">Filmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white " href="/pages/sessao/index.html">Sessões</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white " href="/pages/sobre/index.html">Sobre o Cine Cultura</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/pages/contato/index.html">Contato</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link text-white link-danger" href="/pages/meus_dados/index.html">Minha conta</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+  <section class="py-5 bg-dark cinecultura-bg-filme">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <img src="../../assets/images/img1.png" alt="Os Caras Malvados 2" class="img-fluid">
+        </div>
+        <div class="col-md-8 text-light">
+          <h1 class="display-4 mb-3">Os Caras Malvados 2</h1>
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <div class="d-flex align-items-center gap-2">
+              <img src="../../assets/icons/L.svg" alt="Livre" class="classificacao-icon  ">
+              <p class="mb-0">🕝01h e 43min</p>
+            </div>
+            <div class="text-center">
+              <span class="badge bgred p-1">Animação</span>
+              <span class="badge bgred p-1">Aventura</span>
+              <span class="badge bgred p-1">Comédia</span>
+              <span class="badge bgred p-1">Família</span>
+            </div>
+          </div>
+          <p class=" mb-4">
+            Em OS CARAS MALVADOS 2, os protagonistas lutam para encontrar confiança e aceitação para sua recente
+            condição de bons moços, quando são forçados, por um esquadrão de mulheres criminosas, a abandonar a
+            aposentadoria para fazer um último trabalho.
+          </p>
+          <a href="" class="btn btn-success">
+            Ir para sessões</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sessões e Trailer -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class=" text-center mb-4">📽️<strong>Assista agora no cine Cultura </strong></h2>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="d-flex align-items-center mb-3">
+          </div>
+          <div class="movie-info">
+            <h3>Ficha Técnica</h3>
+            <ul class="list-unstyled">
+              <li><strong>Duração:</strong> 1h 45min</li>
+              <li><strong>Gênero:</strong> Animação, Aventura, Comédia</li>
+              <li><strong>Lançamento:</strong> Agosto de 2024</li>
+              <li><strong>Direção:</strong> Pierre Perifel</li>
+              <li><strong>Classificação:</strong> Livre</li>
+              <li><strong>Roteiro:</strong> Etan Cohen, Hilary Winston</li>
+              <li><strong>Produção:</strong> Damon Ross, Patrick Hughes</li>
+              <li><strong>Música:</strong> Daniel Pemberton</li>
+              <li><strong>Distribuição:</strong> Universal Pictures</li>
+              <li><strong>Estúdio:</strong> DreamWorks Animation</li>
+              <li><strong>Idioma:</strong> Dublado e Legendado</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <h3>Trailer</h3>
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/DccewDgXihs&t=1s" title="Trailer Os Caras Malvados 2"
+              frameborder="0" allowfullscreen></iframe>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+            <div class="social-share text-center py-3">
+            <h5>Compartilhe com quem ama cinema! ❤️</h5>
+            <div>
+              <a href="#" class="btn btn-sm btn-outline-danger">Instagram</a>
+              <a href="#" class="btn btn-sm btn-outline-primary">Facebook</a>
+              <a href="#" class="btn btn-sm btn-outline-secondary">Twitter</a>
+            </div>
+          </div>
+  </section>
+
+    <section class="py-5 text-white bganf">
+      <div class="container ">
+        <div class="row align-items-center text-center">
+          <h4>🍿 Venha se divertir!</h4>
+          <p>A diversão está garantida para toda a família.</p>
+          <div class="col-lg-6 p-2">
+            <img src="../../assets/images/imgCine1.png" alt="Lanches" class=" img-fluid  ">
+          </div>
+          <div class="col-lg-6 p-2">
+            <img src="../../assets/images/imgCine2.png" alt="Pagamento" class=" img-fluid  ">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+
+
+
+</main>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    .cinecultura-bg-filme {
+      background-image: url('../../assets/images/bgfilme.png');
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .bganf {
+      background-image: url("../../assets/background/bg222V.webp");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      width: 100%;
+    }
+
+
+
+  </style>
+
+
+</body>
+
+</html>
