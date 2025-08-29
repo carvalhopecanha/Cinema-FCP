@@ -2,7 +2,6 @@ a:link {
     text-decoration: none;
 }
 
-
 .bghome {
     background-image: url("assets/background/bg112.webp");
     background-size: cover;
@@ -32,15 +31,26 @@ a:link {
     border-radius: 0px !important;
 }
 
+.bgred-modal {
+    background-color: var(--color-red);
+}
+
 .colorgray {
-    color: var(--color-dark);
+    color: var( --txt-gray) !important;
+}
+
+.colored{
+    color: var(--color-red) !important;
 }
 
 .nav-pills .nav-link {
     border-radius: 0px !important;
 }
 
-
+.cine-padding-20{
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+}
 
 /* cabeçalho */
 .logosize {
