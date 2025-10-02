@@ -36,19 +36,23 @@
         <div class="collapse navbar-collapse " id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 cinema-nav-menu">
             <li class="nav-item ">
-              <a class="nav-link active text-white " aria-current="page" href="/pages/filme/index.html">Filmes</a>
+              <a class="nav-link  text-white " aria-current="page" href="/pages/filme/index.html">Filmes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white " href="/pages/sessao/index.html">Sessões</a>
+              <a class="nav-link active text-white " href="/pages/sessao/index.html">Sessões</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white " href="/pages/sobre/index.html">Sobre o Cine Cultura</a>
+              <a class="nav-link text-white " href="/pages/sobre/index.html">O Cine Cultura</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="/pages/contato/index.html">Contato</a>
             </li>
           </ul>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link text-white link-danger" href="/pages/meus_dados/index.html"> <img
+              src="../../assets/icons/cart.svg" alt="Logo" class="img-fluid"><span> </span> </a>
+            </li>
             <li class="nav-item">
               <a class="nav-link text-white link-danger" href="/pages/meus_dados/index.html">Minha conta</a>
             </li>
@@ -63,7 +67,7 @@
     <!-- Filmes em Cartaz (Swiper) -->
     <section class="py-4 bg-cine-dark">
       <div class="container">
-        <h5 class="mb-3">Filmes em cartaz</h5>
+        <h4 class="mb-3"><strong> Filmes em cartaz </strong></h4>
         <div class="swiper mySwiperFilmes py-4">
           <div class="swiper-wrapper">
             <div class="swiper-slide text-center">
@@ -91,34 +95,34 @@
     </section>
 
     <!-- Escolha a data (Swiper) -->
-    <section class="py-4 bg-dark">
+    <section class="py-5 bg-dark">
       <div class="container">
-        <h5 class="mb-3 text-white">Escolha a data</h5>
+        <h4 class="mb-3 text-white">Escolha a data</h4>
         <div class="swiper mySwiperData">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide text-center">
-              <button class="btn btn-danger active">Agosto <br>14<br><small>Quinta</small></button>
+          <div class="swiper-wrapper ">
+            <div class="swiper-slide text-center ">
+              <button class="btn actived-data-button-slide "><span class="data-text-mes"> Agosto </span> <br><span class="data-text-dia">14</span><br> <span class="data-text-dia-semana">Quinta</span></button>
             </div>
             <div class="swiper-slide text-center">
-              <button class="btn btn-secondary">Agosto <br>15<br><small>Sexta</small></button>
+              <button class="btn data-button-slide"><span class="data-text-mes"> Agosto </span> <br><span class="data-text-dia">15</span><br><span class="data-text-dia-semana">Sexta</span ></button>
             </div>
             <div class="swiper-slide text-center">
-              <button class="btn btn-secondary">Agosto <br>16<br><small>Sábado</small></button>
+              <button class="btn data-button-slide"><span class="data-text-mes"> Agosto </span> <br><span class="data-text-dia">16</span><br><span class="data-text-dia-semana">Sábado</span ></button>
             </div>
             <div class="swiper-slide text-center">
-              <button class="btn btn-secondary">Agosto <br>17<br><small>Domingo</small></button>
+              <button class="btn data-button-slide"><span class="data-text-mes"> Agosto </span> <br><span class="data-text-dia">17</span><br><span class="data-text-dia-semana">Domingo</span ></button>
             </div>
             <div class="swiper-slide text-center">
-              <button class="btn btn-secondary">Agosto <br>18<br><small>Segunda</small></button>
+              <button class="btn data-button-slide"><span class="data-text-mes"> Agosto </span> <br><span class="data-text-dia">18</span><br><span class="data-text-dia-semana">Segunda</span ></button>
             </div>
             <div class="swiper-slide text-center">
-              <button class="btn btn-secondary">Agosto <br>19<br><small>Terça</small></button>
+              <button class="btn data-button-slide"><span class="data-text-mes"> Agosto </span> <br><span class="data-text-dia">19</span><br><span class="data-text-dia-semana">Terça</span ></button>
             </div>
             <div class="swiper-slide text-center">
-              <button class="btn btn-secondary">Agosto <br>20<br><small>Quarta</small></button>
+              <button class="btn data-button-slide"><span class="data-text-mes"> Agosto </span> <br><span class="data-text-dia">20</span><br><span class="data-text-dia-semana">Quarta</span ></button>
             </div>
             <div class="swiper-slide text-center">
-              <button class="btn btn-secondary">Agosto <br>21<br><small>Quinta</small></button>
+              <button class="btn data-button-slide"><span class="data-text-mes"> Agosto </span> <br><span class="data-text-dia">21</span><br><span class="data-text-dia-semana">Quinta</span ></button>
             </div>
           </div>
           <!-- Controles do Swiper -->
@@ -131,12 +135,12 @@
     <!-- Horário do filme -->
     <section class="py-5 bg-light">
       <div class=" py-2 container">
-        <h5 class="mb-3">Horário do filme</h5>
+        <h4 class="mb-3">Horário do filme</h4>
         <div class="d-flex flex-wrap gap-2 justify-content-start">
-          <button class="btn btn-danger active">13:00 horas</button>
-          <button class="btn btn-light">14:15 horas</button>
-          <button class="btn btn-light">18:00 horas</button>
-          <button class="btn btn-light">20:30 horas</button>
+          <button class="btn select-t  ">13:00 horas</button>
+          <button class="btn select-t">14:15 horas</button>
+          <button class="btn select-t">18:00 horas</button>
+          <button class="btn select-t">20:30 horas</button>
         </div>
       </div>
     </section>
@@ -179,9 +183,11 @@
         <div class="info">
           <h5>Poltronas Selecionadas</h5>
           <p id="selected-seat">Nenhuma poltrona selecionada</p>
-          <button id="confirmar" class="btn-confirmar d-none" onclick="confirmar()">
+          <a href="/pages/compra/index.html">
+          <button  id="confirmar" class="btn-confirmar d-none" onclick="confirmar()">
             Confirmar Escolha
           </button>
+          </a>
         </div>
       </div>
     </section>
@@ -242,6 +248,50 @@
   </script>
 
   <style>
+ 
+    .select-t{
+      background-color: var(--btn-cinza);
+      color: var(--txt-gray);
+      font-weight: 500;
+    }
+    .select-t:hover{
+       background-color: var(--color-red);
+      color: #fff;
+    }
+
+
+    .actived-data-button-slide{
+      padding: 5px 30px 5px 30px !important;
+      color: #fff;
+      background-color: var(--color-red);
+    }
+    .data-button-slide{
+      border-radius: 12px;
+      border: solid 1.5px;
+      padding: 5px 30px 5px 30px !important;
+      color: #fff;
+    }
+
+    .data-button-slide:hover{
+      background-color: var(--color-red);
+    }
+
+    .data-text-mes{
+      font-size: 18px;
+      color: #fff;
+    }
+    .data-text-dia{
+      font-size: 24px;
+      font-weight: 700;
+      color: #fff !important;
+    }
+
+    .data-text-dia-semana{
+      font-size: 18px;
+      color: #fff !important;
+    }
+    
+
     .seat-row {
       display: flex;
       align-items: center;
@@ -289,12 +339,12 @@
     }
 
     .poltrona:hover {
-      background-color: #8B1E17;
+      background-color: var(--color-red);
       color: white;
     }
 
     .poltrona.selecionada {
-      background-color: #8B1E17;
+      background-color: var(--color-red);
       color: white;
       box-shadow: 0 0 10px rgba(139, 30, 23, 0.5);
     }

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato - Cine Cultura</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Seu CSS personalizado -->
+  <link rel="stylesheet" type="text/css" href="../../style/style.css" media="screen" />
+
+
+</head>
+
+<body class="contact-page ">
+  <!-- Cabeçalho -->
+  <header>
+    <nav class="navbar navbar-expand-lg bg-black border-bottom border-danger">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="../../assets/Logo/logoB.png" alt="Logo" class="img-fluid" style="height: 40px;" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 cinema-nav-menu">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/pages/filme/index.html">Filmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/pages/sessao/index.html">Sessões</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/pages/sobre/index.html">O Cine Cultura</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white active" href="/pages/contato/index.html">Contato</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white link-danger" href="/pages/compra/index.html">
+                <i class="bi bi-cart"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/pages/meus_dados/index.html">Minha conta</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="py-5">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-12 text-center" data-aos="fade-up">
+          <h3 class="section-title">Para mais informações</h3>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Informações de Contato -->
+        <div class="col-md-6" data-aos="fade-right" data-aos-delay="100">
+          <div class="contact-card h-100">
+            <h3 class=" mb-4 text-white text-center">Contato</h3>
+
+            <div class="contact-info">
+              <i class="bi  bi-telephone contact-icon"></i>
+              <div>
+                <p class="mb-0">(63) 3212-7308 / 7307</p>
+                <p class="mb-0">(63) 98448-6637</p>
+              </div>
+            </div>
+
+            <div class="contact-info">
+              <i class="bi bi-envelope contact-icon"></i>
+              <p class="mb-0">cinema@palmas.to.gov.br</p>
+            </div>
+
+            <div class="contact-info">
+              <i class="bi bi-geo-alt contact-icon"></i>
+              <p class="mb-0">Q. 302 Sul, Área Verde, S/N - Plano Diretor Sul, Palmas - TO, 77016-524</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mapa -->
+        <div class="col-md-6" data-aos="fade-left" data-aos-delay="200">
+          <div class="contact-card h-100 d-flex flex-column">
+            <h3 class="text-white mb-3 text-center">Localização</h3>
+            <div class="flex-grow-1">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d246.00129779187636!2d-48.33200076931068!3d-10.199267134371912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1696347136000!5m2!1spt-BR!2sbr"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+    <style>
+    .contact-page {
+      background-color: var(--bg-dark);
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .section-title {
+      color: var(--txt-cinza);
+      font-weight: 600;
+      letter-spacing: 1px;
+       
+    }
+
+    .contact-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      border: 1px solid rgba(220, 53, 69, 0.3);
+    }
+
+    .contact-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 1rem;
+    }
+
+    .contact-icon {
+            color: var(--color-red);
+      font-size: 1.4rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+
+
+    @media (max-width: 768px) {
+      iframe {
+        height: 300px;
+      }
+    }
+  </style>
+</body>
+
+</html>

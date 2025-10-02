@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cinema - FCP</title>
+
+  <link rel="stylesheet" type="text/css" href="../../style/style.css" media="screen" />
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+  <!-- AOS (Animate on Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <style>
+    .hero-section {
+      background: url("../../assets/cinema/banner.jpg") center center/cover no-repeat;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    }
+
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: bold;
+      border-left: 5px solid #dc3545;
+      padding-left: 10px;
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-black border-bottom border-danger">
+      <div class="container">
+        <a class="navbar-brand p-" href="/"> 
+          <img src="../../assets/Logo/logoB.png" alt="Logo" class="img-fluid logosize"> 
+        </a>
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" 
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" 
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 cinema-nav-menu">
+            <li class="nav-item ">
+              <a class="nav-link active text-white " aria-current="page" href="/pages/filme/index.html">Filmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white " href="/pages/sessao/index.html">Sessões</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white " href="/pages/sobre/index.html">O Cine Cultura</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/pages/contato/index.html">Contato</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link text-white link-danger" href="/pages/compra/index.html"> 
+                <img src="../../assets/icons/cart.svg" alt="Carrinho" class="img-fluid"> 
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white link-danger" href="/pages/meus_dados/index.html">Minha conta</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero-section bg-dark">
+      <h1 data-aos="fade-up" data-aos-duration="1500">O Cine Cultura</h1>
+    </section>
+
+    <section class="container py-5">
+      <h2 class="section-title" data-aos="fade-right">Sobre</h2>
+      <p class="lead" data-aos="fade-up" data-aos-delay="200">
+        O Cine Cultura Sala Sinhozinho é um aparelho cultural da Fundação Cultural de Palmas, que exibe uma programação 
+        de filmes de caráter cultural de qualidade, a preços populares com o intuito da formação de público e ampliação 
+        do repertório cultural do espectador.
+      </p>
+      <p data-aos="fade-up" data-aos-delay="400">
+        A programação do Cine Cultura é alinhada com os maiores festivais de cinema nacionais e estrangeiros, como o 
+        Festival de Cinema de Gramado, Mostra Internacional de São Paulo, Festival de Cannes, Oscar da Academia Internacional 
+        de Cinema, entre outros.
+      </p>
+      <p data-aos="fade-up" data-aos-delay="600">
+        O Cine Cultura é também local de exibição de filmes regionais e a janela do cinema tocantinense. Às terças-feiras, 
+        a sala é dedicada exclusivamente a sessões do projeto Cine Escola — que oferece acesso gratuito a crianças, jovens 
+        e adultos — e ao lançamento de filmes e obras audiovisuais produzidas no Estado do Tocantins por meio dos mecanismos 
+        de fomento, como o Programa Municipal de Incentivo à Cultura (Promic), a Lei Paulo Gustavo (LPG) e a Política 
+        Nacional Aldir Blanc (PNAB).
+      </p>
+    </section>
+
+    
+    <section class="container py-5">
+      <h2 class="section-title" data-aos="fade-right">Fotos</h2>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+          <img src="../../assets/background/bg1.webp" class="img-fluid rounded shadow" alt="Cinema 1">
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+          <img src="../../assets/background/bg11.webp"  class="img-fluid rounded shadow" alt="Cinema 2">
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="500">
+          <img src="../../assets/background/bg1.webp"  class="img-fluid rounded shadow" alt="Cinema 3">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

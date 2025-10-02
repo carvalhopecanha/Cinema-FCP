@@ -1,9 +1,15 @@
 :root {
   --color-red: #8b1e17;
   --corlor-yellow: #eac511;
-  --bg-dark: #161515;
   --color-dark: #2E2E2F;
+
+  --btn-cinza: #E9E9E9;
+
+  --bg-dark: #161515;
+  --bg-cinza: #F0F0F0;
+
 
   --txt-gray: #464646;
   --txt-cinza: #bdc3c7;
 }
+
