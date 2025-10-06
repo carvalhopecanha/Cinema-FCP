@@ -16,11 +16,10 @@ O site foi desenvolvido com tecnologias web modernas, priorizando **responsivida
 
 ## 🛠 Tecnologias Utilizadas
 
-- **HTML5** – Estrutura semântica
+- **HTML5** – Estrutura 
 - **CSS3** – Estilização personalizada
 - **Bootstrap 5** – Framework responsivo
 - **Swiper JS** – Carrossel interativo para filmes em cartaz
-- **Font Awesome** – Ícones
 - **JavaScript** – Funcionalidades dinâmicas
 - **AOS js** – Animação
 

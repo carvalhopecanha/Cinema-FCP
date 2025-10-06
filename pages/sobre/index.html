@@ -23,7 +23,6 @@
 
   <style>
     .hero-section {
-      background: url("../../assets/cinema/banner.jpg") center center/cover no-repeat;
       min-height: 60vh;
       display: flex;
       align-items: center;
@@ -31,18 +30,21 @@
       color: #fff;
       text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
     }
-
     .hero-section h1 {
       font-size: 3rem;
       font-weight: bold;
     }
-
     .section-title {
       font-size: 2rem;
       font-weight: bold;
       border-left: 5px solid #dc3545;
       padding-left: 10px;
       margin-bottom: 1.5rem;
+    }
+        .cinecultura-bg-sobreF {
+      background-image: url('../../assets/background/cinbgs.webp');
+      background-size: cover;
+      background-position: center;
     }
   </style>
 </head>
@@ -51,11 +53,11 @@
   <header>
     <nav class="navbar navbar-expand-lg bg-black border-bottom border-danger">
       <div class="container">
-        <a class="navbar-brand p-" href="/"> 
-          <img src="../../assets/Logo/logoB.png" alt="Logo" class="img-fluid logosize"> 
+        <a class="navbar-brand p-" href="/">
+          <img src="../../assets/Logo/logoB.png" alt="Logo" class="img-fluid logosize">
         </a>
-        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" 
-          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" 
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
           aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -76,8 +78,8 @@
           </ul>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
             <li class="nav-item">
-              <a class="nav-link text-white link-danger" href="/pages/compra/index.html"> 
-                <img src="../../assets/icons/cart.svg" alt="Carrinho" class="img-fluid"> 
+              <a class="nav-link text-white link-danger" href="/pages/compra/index.html">
+                <img src="../../assets/icons/cart.svg" alt="Carrinho" class="img-fluid">
               </a>
             </li>
             <li class="nav-item">
@@ -91,32 +93,36 @@
 
   <main>
 
-    <section class="hero-section bg-dark">
+    <section class="hero-section bg-dark cinecultura-bg-sobreF ">
       <h1 data-aos="fade-up" data-aos-duration="1500">O Cine Cultura</h1>
     </section>
 
     <section class="container py-5">
       <h2 class="section-title" data-aos="fade-right">Sobre</h2>
-      <p class="lead" data-aos="fade-up" data-aos-delay="200">
-        O Cine Cultura Sala Sinhozinho é um aparelho cultural da Fundação Cultural de Palmas, que exibe uma programação 
-        de filmes de caráter cultural de qualidade, a preços populares com o intuito da formação de público e ampliação 
+      <p class="lead" data-aos="fade-up" data-aos-duration="200">
+        O Cine Cultura Sala Sinhozinho é um aparelho cultural da Fundação Cultural de Palmas, que exibe uma programação
+        de filmes de caráter cultural de qualidade, a preços populares com o intuito da formação de público e ampliação
         do repertório cultural do espectador.
       </p>
-      <p data-aos="fade-up" data-aos-delay="400">
-        A programação do Cine Cultura é alinhada com os maiores festivais de cinema nacionais e estrangeiros, como o 
-        Festival de Cinema de Gramado, Mostra Internacional de São Paulo, Festival de Cannes, Oscar da Academia Internacional 
+      <p data-aos="fade-up" data-aos-duration="400">
+        A programação do Cine Cultura é alinhada com os maiores festivais de cinema nacionais e estrangeiros, como o
+        Festival de Cinema de Gramado, Mostra Internacional de São Paulo, Festival de Cannes, Oscar da Academia
+        Internacional
         de Cinema, entre outros.
       </p>
-      <p data-aos="fade-up" data-aos-delay="600">
-        O Cine Cultura é também local de exibição de filmes regionais e a janela do cinema tocantinense. Às terças-feiras, 
-        a sala é dedicada exclusivamente a sessões do projeto Cine Escola — que oferece acesso gratuito a crianças, jovens 
-        e adultos — e ao lançamento de filmes e obras audiovisuais produzidas no Estado do Tocantins por meio dos mecanismos 
-        de fomento, como o Programa Municipal de Incentivo à Cultura (Promic), a Lei Paulo Gustavo (LPG) e a Política 
+      <p data-aos="fade-up" data-aos-duration="600">
+        O Cine Cultura é também local de exibição de filmes regionais e a janela do cinema tocantinense. Às
+        terças-feiras,
+        a sala é dedicada exclusivamente a sessões do projeto Cine Escola — que oferece acesso gratuito a crianças,
+        jovens
+        e adultos — e ao lançamento de filmes e obras audiovisuais produzidas no Estado do Tocantins por meio dos
+        mecanismos
+        de fomento, como o Programa Municipal de Incentivo à Cultura (Promic), a Lei Paulo Gustavo (LPG) e a Política
         Nacional Aldir Blanc (PNAB).
       </p>
     </section>
 
-    
+
     <section class="container py-5">
       <h2 class="section-title" data-aos="fade-right">Fotos</h2>
       <div class="row g-4">
@@ -124,18 +130,47 @@
           <img src="../../assets/background/bg1.webp" class="img-fluid rounded shadow" alt="Cinema 1">
         </div>
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-          <img src="../../assets/background/bg11.webp"  class="img-fluid rounded shadow" alt="Cinema 2">
+          <img src="../../assets/background/bgcinema.webp" class="img-fluid rounded shadow" alt="Cinema 3">
         </div>
         <div class="col-md-4" data-aos="zoom-in" data-aos-delay="500">
-          <img src="../../assets/background/bg1.webp"  class="img-fluid rounded shadow" alt="Cinema 3">
+          <img src="../../assets/background/bg11.webp" class="img-fluid rounded shadow" alt="Cinema 2">
         </div>
+
       </div>
     </section>
-
   </main>
+
+  <footer class="bg-black text-white py-5 border-top border-danger">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="../../assets/Logo/logoB.png" alt="Logo" class="img-fluid mb-3 logosize">
+        </div>
+        <div class="col-md-3">
+          <h5><strong>Endereço</strong></h5>
+          <p>Q. 302 Sul, Área Verde,<br>
+            S/N - Plano Diretor Sul,<br>
+            Palmas - TO, 77016-524</p>
+        </div>
+        <div class="col-md-3">
+          <h5><strong></strong>Contato</strong></h5>
+          <p>63 3212-7308<br>
+            cinema@palmas.to.gov.br</p>
+        </div>
+        <div class="col-md-1 text-end">
+          <a href="https://www.instagram.com/cineculturapalmas/" class="text-white"><img
+              src="../../assets/images/instagram.svg" alt="Logo" class="img-fluid">
+            <p class="mb-0 mb-2">Instagram</p>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script>
     AOS.init();
   </script>
 </body>
+
 </html>

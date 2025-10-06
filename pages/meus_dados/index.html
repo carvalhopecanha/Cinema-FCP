@@ -16,414 +16,17 @@
     crossorigin="anonymous"></script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-</head>
-
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-black border-bottom border-danger">
-      <div class="container">
-        <a class="navbar-brand p-" href="/"> <img src="../../assets/Logo/logoB.png" alt="Logo"
-            class="img-fluid logosize"> </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 cinema-nav-menu">
-            <li class="nav-item ">
-              <a class="nav-link active text-white " aria-current="page" href="/pages/filme/index.html">Filmes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white " href="/pages/sessao/index.html">Sessões</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white " href="/pages/sobre/index.html">O Cine Cultura</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="/pages/contato/index.html">Contato</a>
-            </li>
-          </ul>
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-            <li class="nav-item">
-              <a class="nav-link text-white link-danger" href="/pages/compra/index.html"> <img
-                  src="../../assets/icons/cart.svg" alt="Logo" class="img-fluid"><span> </span> </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white link-danger" href="/pages/meus_dados/index.html">Minha conta</a>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-    <h2 class="cine-padding-20 text-center"><strong> Olá Fernando </strong></h2>
-    <div class="container ">
-      <div class="row">
-        <div class="col-lg-3 col-md-12 col-sm-12 d-none d-lg-block">
-          <div class=" h-100 rounded">
-            <div class=" ">
-              <h5 class="mb-4 "><strong> Minha conta </strong></h5>
-              <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <li class="nav-item">
-                  <button class="nav-link active" id="v-pills-ingressos-tab" data-bs-toggle="pill"
-                    data-bs-target="#v-pills-ingressos" type="button" role="tab" aria-controls="v-pills-ingressos"
-                    aria-selected="true">
-                    → Ingressos ativos
-                  </button>
-                </li>
-                <li class="nav-item">
-                  <button class="nav-link" id="v-pills-compras-tab" data-bs-toggle="pill"
-                    data-bs-target="#v-pills-compras" type="button" role="tab" aria-controls="v-pills-compras"
-                    aria-selected="false">
-                    → Minhas compras
-                  </button>
-                </li>
-                <li class="nav-item">
-                  <button class="nav-link" id="v-pills-dados-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dados"
-                    type="button" role="tab" aria-controls="v-pills-dados" aria-selected="false">
-                    → Dados Pessoais
-                  </button>
-                </li>
-                <li class="nav-item">
-                  <button class="nav-link" id="v-pills-senha-tab" data-bs-toggle="pill" data-bs-target="#v-pills-senha"
-                    type="button" role="tab" aria-controls="v-pills-senha" aria-selected="false">
-                    → Alterar senha
-                  </button>
-                </li>
-                <li class="nav-item">
-                  <a href="#" class="nav-link pt-4 colored">→ Sair</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- Botão Menu (Mobile) -->
-        <div class="fixed-bottom d-lg-none bgred text-white p-2">
-          <div class="d-flex justify-content-end">
-            <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
-              Menu
-            </button>
-          </div>
-        </div>
-
-        <!-- Offcanvas (Mobile) -->
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel"
-          data-bs-backdrop="true">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasMenuLabel">Minha conta</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-              <li class="nav-item">
-                <button class="nav-link active" onclick="fecharOffcanvas()" id="v-pills-ingressos-tab" data-bs-toggle="pill"
-                  data-bs-target="#v-pills-ingressos" type="button" role="tab" aria-controls="v-pills-ingressos"
-                  aria-selected="true" data-bs-dismiss="offcanvas">
-                  → Ingressos ativos
-                </button>
-              </li>
-              <li class="nav-item">
-                <button class="nav-link" onclick="fecharOffcanvas()" id="v-pills-compras-tab" data-bs-toggle="pill"
-                  data-bs-target="#v-pills-compras" type="button" role="tab" aria-controls="v-pills-compras"
-                  aria-selected="false" data-bs-dismiss="offcanvas">
-                  → Minhas compras
-                </button>
-              </li>
-              <li class="nav-item">
-                <button class="nav-link" onclick="fecharOffcanvas()" id="v-pills-dados-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dados"
-                  type="button" role="tab" aria-controls="v-pills-dados" aria-selected="false">
-                  → Dados Pessoais
-                </button>
-              </li>
-              <li class="nav-item">
-                <button class="nav-link" onclick="fecharOffcanvas()" id="v-pills-senha-tab" data-bs-toggle="pill" data-bs-target="#v-pills-senha"
-                  type="button" role="tab" aria-controls="v-pills-senha" aria-selected="false">
-                  → Alterar senha
-                </button>
-              </li>
-            </ul>
-            <hr>
-            <a href="#" class="nav-link colored" onclick="fecharOffcanvas()" >→ Sair</a>
-          </div>
-        </div>
-
-        <div class="col-lg-9 col-md-12 col-sm-12">
-          <div class="tab-content" id="v-pills-tabContent">
-            <div class="tab-pane fade show active" id="v-pills-ingressos" role="tabpanel"
-              aria-labelledby="v-pills-ingressos-tab">
-              <div class="row g-3">
-                <!-- Ingresso 1 -->
-                <div class="col-12">
-                  <h6 class=" colored pb-3 ">Meus ingressos </h6>
-                  <div class="border-0">
-                    <div class="">
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                          <h6 class="mb-1"><strong>'Nome do Filme'</strong></h6>
-                          <small>Data: 10/08/2025</small>
-                        </div>
-                        <button class="btn  cine-account-view" data-bs-toggle="modal" data-bs-target="#showticket">
-                          Visualizar
-                        </button>
-                      </div>
-                    </div>
-                    <hr>
-                  </div>
-                </div>
-                <!-- Ingresso 2 -->
-                <div class="col-12">
-                  <div class="border-0">
-                    <div class="">
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                          <h6 class="mb-1"><strong>'Outro Filme'</strong></h6>
-                          <small>Data: 12/08/2025</small>
-                        </div>
-                        <button class="btn  cine-account-view" data-bs-toggle="modal" data-bs-target="#showticket">
-                          Visualizar
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="modal fade" id="showticket" tabindex="-1" aria-labelledby="showticket" aria-hidden="true">
-                <div class="modal-dialog  modal-lg">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h1 class="modal-title fs-5" id="showticket">Seu Ingresso</h1>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      "Imagem do QRcode ou código de validação do ingresso.""
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-              <div class="tab-pane fade" id="v-pills-compras" role="tabpanel" aria-labelledby="v-pills-compras-tab">
-              <div class="row">
-                <h6 class=" colored pb-3">Meu histórico</h6>
-                <div class="col-12">
-                  <div class="d-flex justify-content-between align-items-center mb-2">
-                    <h6 class="mb-0">Nº pedido: #854687</h6>
-                    <span class="badge badge-pago">Pago</span>
-                  </div>
-                  <div class="row mb-2">
-                    <div class="col-6">
-                      <small>Data</small>
-                      <p class="mb-0">12/05/2025</p>
-                    </div>
-                    <div class="col-6">
-                      <small>Valor</small>
-                      <p class="mb-0">R$ 49,23</p>
-                    </div>
-                  </div>
-                  <button type="button" class="btn cine-account-view btn-sm w-100" data-bs-toggle="modal"
-                    data-bs-target="#showhistory">
-                    Visualizar
-                  </button>
-                  <hr>
-                </div>
-                <div class="col-12">
-                  <div class="d-flex justify-content-between align-items-center mb-2">
-                    <h6 class="mb-0">Nº pedido: #954687</h6>
-                    <span class="badge badge-pago">Pago</span>
-                  </div>
-                  <div class="row mb-2">
-                    <div class="col-6">
-                      <small>Data</small>
-                      <p class="mb-0">02/03/2025</p>
-                    </div>
-                    <div class="col-6">
-                      <small>Valor</small>
-                      <p class="mb-0">R$ 25,16</p>
-                    </div>
-                  </div>
-                  <button type="button" class="btn cine-account-view btn-sm w-100" data-bs-toggle="modal"
-                    data-bs-target="#showhistory">
-                    Visualizar
-                  </button>
-                  <hr>
-                </div>
-                <div class="col-12">
-                  <div class="d-flex justify-content-between align-items-center mb-2">
-                    <h6 class="mb-0">Nº pedido: #124687</h6>
-                    <span class="badge badge-cancelado">Cancelado</span>
-                  </div>
-                  <div class="row mb-2">
-                    <div class="col-6">
-                      <small>Data</small>
-                      <p class="mb-0">26/06/2024</p>
-                    </div>
-                    <div class="col-6">
-                      <small>Valor</small>
-                      <p class="mb-0">R$ 55,39</p>
-                    </div>
-                  </div>
-                  <button type="button" class="btn cine-account-view btn-sm w-100" data-bs-toggle="modal"
-                    data-bs-target="#showhistory">
-                    Visualizar
-                  </button>
-                  <hr>
-                </div>
-              </div>
-              <!-- Modal -->
-              <div class="modal fade" id="showhistory" tabindex="-1" aria-labelledby="showhistory" aria-hidden="true">
-                <div class="modal-dialog  modal-xl">
-                  <div class="modal-content">
-                    <div class="modal-header bgred-modal ">
-                      <h2 class="modal-title text-white fs-5" id="showhistory"> Histórico de compra #6543</h2>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="mb-4">
-                        <h6><strong>Sobre o pedido</strong></h6>
-                        <p class="mb-1">Número do pedido: <strong>#854687</strong></p>
-                        <p class="mb-1">Data do pedido: <strong>12/05/2025, 13:49</strong></p>
-                        <p class="mb-1">Status: <span class="badge badge-pago ">Pago</span></p>
-                        <p class="mb-0">Forma de pagamento: <strong>PIX</strong></p>
-                      </div>
-
-
-                      <hr>
-
-                      <h6><strong>Detalhes do pedido</strong></h6>
-                      <div class="table-responsive">
-                        <table class="table table-light table-sm">
-                          <thead>
-                            <tr>
-                              <th>Qtde</th>
-                              <th>Produto</th>
-                              <th>Total</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>2</td>
-                              <td>Ingresso inteira</td>
-                              <td>R$ 20,00</td>
-                            </tr>
-                            <tr>
-                              <td>1</td>
-                              <td>Pipoca</td>
-                              <td>R$ 9,23</td>
-                            </tr>
-                          </tbody>
-                        </table>
-
-                        <!-- Total -->
-                        <div class="d-flex justify-content-between mt-3 pt-3 border-top">
-                          <strong>Total do pedido</strong>
-                          <strong>R$ 29,23</strong>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-            </div>
-           
-            <div class="tab-pane fade" id="v-pills-dados" role="tabpanel" aria-labelledby="v-pills-dados-tab">
-              <h6 class=" colored ">Meus dados</h6>
-              <div class="row">
-                <div class="col-md-6 p-3">
-                  <label>Nome</label>
-                  <input type="text" class="form-control" value="Fernando">
-                </div>
-                <div class="col-md-6 p-3">
-                  <label>Sobrenome</label>
-                  <input type="text" class="form-control" value="Silva Araujo">
-                </div>
-                <div class="col-md-6 p-3">
-                  <label>CPF</label>
-                  <input type="text" class="form-control" value="056455762-16">
-                </div>
-                <div class="col-md-6 p-3">
-                  <label>Telefone</label>
-                  <input type="tel" class="form-control" value="63 95246-8475">
-                </div>
-                <div class="col-md-12 p-3">
-                  <label>E-mail</label>
-                  <input type="email" class="form-control" value="joao@email.com">
-                </div>
-              </div>
-              <button class="btn mt-3 btn-warning">Alterar</button>
-            </div>
-            <!-- Seção: Alterar Senha -->
-            <div class="tab-pane fade" id="v-pills-senha" role="tabpanel" aria-labelledby="v-pills-senha-tab">
-              <h6 class=" colored  pb-3">Alterar senha</h6>
-              <div class="mb-3">
-                <label>Senha atual</label>
-                <input type="password" class="form-control">
-              </div>
-              <div class="mb-3">
-                <label>Nova senha</label>
-                <input type="password" class="form-control">
-              </div>
-              <div class="mb-3">
-                <label>Confirmar nova senha</label>
-                <input type="password" class="form-control">
-              </div>
-              <button class="btn mt-3 btn-warning">Alterar</button>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-
-
-  <!-- Scripts -->
-<script>
-  /* fechar canva no mobile */
-  function fecharOffcanvas() {
-    const offcanvas = document.getElementById('offcanvasMenu');
-    const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvas);
-
-    if (bsOffcanvas) {
-      bsOffcanvas.hide(); // Fecha o offcanvas
-    }
-
-    // Remove o backdrop escuro (caso fique preso)
-    const backdrop = document.querySelector('.offcanvas-backdrop');
-    if (backdrop) {
-      backdrop.remove();
-    }
-
-    // Remove as classes de overflow do body
-    document.body.classList.remove('modal-open');
-  }
-</script>
 
   <style>
-    /* Estilo personalizado */
-
     .card {
       border: none;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
-
-    body {
-      background-color: #f8f9fa;
-      color: #000;
+    .menu-font {
+      font-weight: 600;
+      font-size: 16px;
     }
-
 
     .cine-account-view {
       border-color: #006400;
@@ -479,7 +82,444 @@
       border: none;
 
     }
+    .tela-minhaconta{
+      min-height: 70vh;
+      display: flex;
+    }
   </style>
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-black border-bottom border-danger">
+      <div class="container">
+        <a class="navbar-brand p-" href="/"> <img src="../../assets/Logo/logoB.png" alt="Logo"
+            class="img-fluid logosize"> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 cinema-nav-menu">
+            <li class="nav-item ">
+              <a class="nav-link active text-white " aria-current="page" href="/pages/filme/index.html">Filmes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white " href="/pages/sessao/index.html">Sessões</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white " href="/pages/sobre/index.html">O Cine Cultura</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/pages/contato/index.html">Contato</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link text-white link-danger" href="/pages/compra/index.html"> <img
+                  src="../../assets/icons/cart.svg" alt="Logo" class="img-fluid"><span> </span> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white link-danger" href="/pages/meus_dados/index.html">Minha conta</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="tela-minhaconta py-5   ">
+      <div class="container">
+        <div class="row ">
+          <div class="col-md-3"></div>
+          <div class="col-md-9">
+            <h2 class=" py-2"><strong> Fernando Silva </strong></h2>
+          </div>
+          <div class="col-lg-3 col-md-12 col-sm-12 d-none d-lg-block">
+            <div class=" h-100 rounded">
+              <div class=" ">
+
+                <h5 class="mb-4 "><strong> Minha conta </strong></h5>
+                <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <li class="nav-item">
+                    <button class="nav-link active menu-font" id="v-pills-ingressos-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-ingressos" type="button" role="tab" aria-controls="v-pills-ingressos"
+                      aria-selected="true">
+                      → Ingressos ativos
+                    </button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="nav-link menu-font" id="v-pills-compras-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-compras" type="button" role="tab" aria-controls="v-pills-compras"
+                      aria-selected="false">
+                      → Minhas compras
+                    </button>
+                  </li>
+                  <li class="nav-item menu-font">
+                    <button class="nav-link" id="v-pills-dados-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-dados" type="button" role="tab" aria-controls="v-pills-dados"
+                      aria-selected="false">
+                      → Dados Pessoais
+                    </button>
+                  </li>
+                  <li class="nav-item menu-font">
+                    <button class="nav-link" id="v-pills-senha-tab" data-bs-toggle="pill"
+                      data-bs-target="#v-pills-senha" type="button" role="tab" aria-controls="v-pills-senha"
+                      aria-selected="false">
+                      → Alterar senha
+                    </button>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#" class="nav-link pt-4 colored">→ Sair</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Botão Menu (Mobile) -->
+          <div class="fixed-bottom d-lg-none bgred text-white p-2">
+            <div class="d-flex justify-content-end">
+              <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                Menu
+              </button>
+            </div>
+          </div>
+
+          <!-- Offcanvas (Mobile) -->
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel"
+            data-bs-backdrop="true">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasMenuLabel">Minha conta</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <li class="nav-item">
+                  <button class="nav-link active " onclick="fecharOffcanvas()" id="v-pills-ingressos-tab"
+                    data-bs-toggle="pill" data-bs-target="#v-pills-ingressos" type="button" role="tab"
+                    aria-controls="v-pills-ingressos" aria-selected="true" data-bs-dismiss="offcanvas">
+                    → Ingressos ativos
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button class="nav-link" onclick="fecharOffcanvas()" id="v-pills-compras-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-compras" type="button" role="tab" aria-controls="v-pills-compras"
+                    aria-selected="false" data-bs-dismiss="offcanvas">
+                    → Minhas compras
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button class="nav-link" onclick="fecharOffcanvas()" id="v-pills-dados-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-dados" type="button" role="tab" aria-controls="v-pills-dados"
+                    aria-selected="false">
+                    → Dados Pessoais
+                  </button>
+                </li>
+                <li class="nav-item">
+                  <button class="nav-link" onclick="fecharOffcanvas()" id="v-pills-senha-tab" data-bs-toggle="pill"
+                    data-bs-target="#v-pills-senha" type="button" role="tab" aria-controls="v-pills-senha"
+                    aria-selected="false">
+                    → Alterar senha
+                  </button>
+                </li>
+              </ul>
+              <hr>
+              <a href="#" class="nav-link colored" onclick="fecharOffcanvas()">→ Sair</a>
+            </div>
+          </div>
+
+          <div class="col-lg-9 col-md-12 col-sm-12">
+            <div class="tab-content" id="v-pills-tabContent">
+              <div class="tab-pane fade show active" id="v-pills-ingressos" role="tabpanel"
+                aria-labelledby="v-pills-ingressos-tab">
+                <div class="row g-3">
+                  <!-- Ingresso 1 -->
+                  <div class="col-12">
+                    <h6 class=" colored pb-3 ">Meus ingressos </h6>
+                    <div class="border-0">
+                      <div class="">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <h6 class="mb-1"><strong>'Nome do Filme'</strong></h6>
+                            <small>Data: 10/08/2025</small>
+                          </div>
+                          <button class="btn  cine-account-view" data-bs-toggle="modal" data-bs-target="#showticket">
+                            Visualizar
+                          </button>
+                        </div>
+                      </div>
+                      <hr>
+                    </div>
+                  </div>
+                  <!-- Ingresso 2 -->
+                  <div class="col-12">
+                    <div class="border-0">
+                      <div class="">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div>
+                            <h6 class="mb-1"><strong>'Outro Filme'</strong></h6>
+                            <small>Data: 12/08/2025</small>
+                          </div>
+                          <button class="btn  cine-account-view" data-bs-toggle="modal" data-bs-target="#showticket">
+                            Visualizar
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal fade" id="showticket" tabindex="-1" aria-labelledby="showticket" aria-hidden="true">
+                  <div class="modal-dialog  modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="showticket">Seu Ingresso</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        "Imagem do QRcode ou código de validação do ingresso.""
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-compras" role="tabpanel" aria-labelledby="v-pills-compras-tab">
+                <div class="row">
+                  <h6 class=" colored pb-3">Meu histórico</h6>
+                  <div class="col-12">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <h6 class="mb-0">Nº pedido: #854687</h6>
+                      <span class="badge badge-pago">Pago</span>
+                    </div>
+                    <div class="row mb-2">
+                      <div class="col-6">
+                        <small>Data</small>
+                        <p class="mb-0">12/05/2025</p>
+                      </div>
+                      <div class="col-6">
+                        <small>Valor</small>
+                        <p class="mb-0">R$ 49,23</p>
+                      </div>
+                    </div>
+                    <button type="button" class="btn cine-account-view btn-sm w-100" data-bs-toggle="modal"
+                      data-bs-target="#showhistory">
+                      Visualizar
+                    </button>
+                    <hr>
+                  </div>
+                  <div class="col-12">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <h6 class="mb-0">Nº pedido: #954687</h6>
+                      <span class="badge badge-pago">Pago</span>
+                    </div>
+                    <div class="row mb-2">
+                      <div class="col-6">
+                        <small>Data</small>
+                        <p class="mb-0">02/03/2025</p>
+                      </div>
+                      <div class="col-6">
+                        <small>Valor</small>
+                        <p class="mb-0">R$ 25,16</p>
+                      </div>
+                    </div>
+                    <button type="button" class="btn cine-account-view btn-sm w-100" data-bs-toggle="modal"
+                      data-bs-target="#showhistory">
+                      Visualizar
+                    </button>
+                    <hr>
+                  </div>
+                  <div class="col-12">
+                    <div class="d-flex justify-content-between align-items-center mb-2">
+                      <h6 class="mb-0">Nº pedido: #124687</h6>
+                      <span class="badge badge-cancelado">Cancelado</span>
+                    </div>
+                    <div class="row mb-2">
+                      <div class="col-6">
+                        <small>Data</small>
+                        <p class="mb-0">26/06/2024</p>
+                      </div>
+                      <div class="col-6">
+                        <small>Valor</small>
+                        <p class="mb-0">R$ 55,39</p>
+                      </div>
+                    </div>
+                    <button type="button" class="btn cine-account-view btn-sm w-100" data-bs-toggle="modal"
+                      data-bs-target="#showhistory">
+                      Visualizar
+                    </button>
+                    <hr>
+                  </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="showhistory" tabindex="-1" aria-labelledby="showhistory" aria-hidden="true">
+                  <div class="modal-dialog  modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header bgred-modal ">
+                        <h2 class="modal-title text-white fs-5" id="showhistory"> Histórico de compra #6543</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="mb-4">
+                          <h6><strong>Sobre o pedido</strong></h6>
+                          <p class="mb-1">Número do pedido: <strong>#854687</strong></p>
+                          <p class="mb-1">Data do pedido: <strong>12/05/2025, 13:49</strong></p>
+                          <p class="mb-1">Status: <span class="badge badge-pago ">Pago</span></p>
+                          <p class="mb-0">Forma de pagamento: <strong>PIX</strong></p>
+                        </div>
+
+
+                        <hr>
+
+                        <h6><strong>Detalhes do pedido</strong></h6>
+                        <div class="table-responsive">
+                          <table class="table table-light table-sm">
+                            <thead>
+                              <tr>
+                                <th>Qtde</th>
+                                <th>Produto</th>
+                                <th>Total</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>2</td>
+                                <td>Ingresso inteira</td>
+                                <td>R$ 20,00</td>
+                              </tr>
+                              <tr>
+                                <td>1</td>
+                                <td>Pipoca</td>
+                                <td>R$ 9,23</td>
+                              </tr>
+                            </tbody>
+                          </table>
+
+                          <!-- Total -->
+                          <div class="d-flex justify-content-between mt-3 pt-3 border-top">
+                            <strong>Total do pedido</strong>
+                            <strong>R$ 29,23</strong>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="tab-pane fade" id="v-pills-dados" role="tabpanel" aria-labelledby="v-pills-dados-tab">
+                <h6 class=" colored ">Meus dados</h6>
+                <div class="row">
+                  <div class="col-md-6 p-3">
+                    <label>Nome</label>
+                    <input type="text" class="form-control" value="Fernando">
+                  </div>
+                  <div class="col-md-6 p-3">
+                    <label>Sobrenome</label>
+                    <input type="text" class="form-control" value="Silva Araujo">
+                  </div>
+                  <div class="col-md-6 p-3">
+                    <label>CPF</label>
+                    <input type="text" class="form-control" value="056455762-16">
+                  </div>
+                  <div class="col-md-6 p-3">
+                    <label>Telefone</label>
+                    <input type="tel" class="form-control" value="63 95246-8475">
+                  </div>
+                  <div class="col-md-12 p-3">
+                    <label>E-mail</label>
+                    <input type="email" class="form-control" value="joao@email.com">
+                  </div>
+                </div>
+                <button class="btn mt-3 btn-warning">Alterar</button>
+              </div>
+              <!-- Seção: Alterar Senha -->
+              <div class="tab-pane fade" id="v-pills-senha" role="tabpanel" aria-labelledby="v-pills-senha-tab">
+                <h6 class=" colored  pb-3">Alterar senha</h6>
+                <div class="mb-3">
+                  <label>Senha atual</label>
+                  <input type="password" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label>Nova senha</label>
+                  <input type="password" class="form-control">
+                </div>
+                <div class="mb-3">
+                  <label>Confirmar nova senha</label>
+                  <input type="password" class="form-control">
+                </div>
+                <button class="btn mt-3 btn-warning">Alterar</button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-black text-white border-top border-danger py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="../../assets/Logo/logoB.png" alt="Logo" class="img-fluid mb-3 logosize">
+        </div>
+        <div class="col-md-3">
+          <h5><strong>Endereço</strong></h5>
+          <p>Q. 302 Sul, Área Verde,<br>
+            S/N - Plano Diretor Sul,<br>
+            Palmas - TO, 77016-524</p>
+        </div>
+        <div class="col-md-3">
+          <h5><strong></strong>Contato</strong></h5>
+          <p>63 3212-7308<br>
+            cinema@palmas.to.gov.br</p>
+        </div>
+        <div class="col-md-1 text-end">
+          <a href="https://www.instagram.com/cineculturapalmas/" class="text-white"><img
+              src="../../assets/images/instagram.svg" alt="Logo" class="img-fluid">
+            <p class="mb-0 mb-2">Instagram</p>
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script>
+    /* fechar canva no mobile */
+    function fecharOffcanvas() {
+      const offcanvas = document.getElementById('offcanvasMenu');
+      const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvas);
+
+      if (bsOffcanvas) {
+        bsOffcanvas.hide(); // Fecha o offcanvas
+      }
+
+      // Remove o backdrop escuro (caso fique preso)
+      const backdrop = document.querySelector('.offcanvas-backdrop');
+      if (backdrop) {
+        backdrop.remove();
+      }
+
+      // Remove as classes de overflow do body
+      document.body.classList.remove('modal-open');
+    }
+  </script>
 
 
 </body>
